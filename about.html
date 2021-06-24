@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="about.css" rel="stylesheet" type="text/css"/>
+    <title>Ami</title>
+</head>
+<body>
+    <section id="banner">
+        <img src="./static/images/ami-pfp.jpg" class="logo">
+        <div class="banner-text">
+            <h1>Ami!</h1>
+        </div>
+        <div class="bottom-text">
+            <h2>Bring Life to your discord experience</h2>
+            <p>The queen of discord bots</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Invite Me!</a>
+                <a href="#"><span></span>Support</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="./about.html">Home</a></li>
+                <li><a href="https://ami-3.gitbook.io/ami">Docs</a></li>
+                <li><a href="#ofr">Features</a></li>
+                <li><a href="./last.html">About</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <div id="menubtn">
+        <img src="./static/images/menu.png" id="mnu">
+    </div>
+
+
+<!---############################### SECTION FOR WHAT WE OFFER  #######################################-->
+    <section class="offers" id="ofr">
+        <h1>What Ami offer!</h1>
+        <p>Ami offers a wide varity of offers to enhance your discord experience<br>Build with love!</p>
+        <div class="row">
+            <div class="offers-col">
+                <h3>Economy & Levelling</h3>
+                <hr>
+                <p>With ami economy & levelling system, you will get your discord server experience a lot better and enjoyable! Imagine can customize your level card, rob coins to members, have pet's, mining boosts and invest coins!</p>
+            </div>
+            <div class="offers-col">
+                <h3>Music & Live</h3>
+                <hr>
+                <p>Well, you surely want to listen music sometimes.. don't worry, Ami comes also for that! Play music from youtube, 24/7h supported, live streaming videos supported and imagine can listen music at 150% of the standard volume.. incredible no?</p>
+            </div>
+            <div class="offers-col">
+                <h3>Welcome & Auto-Role</h3>
+                <hr>
+                <p>Look, imagine you join in a server, but you will get no role and no welcome.. pretty sad, right? I know.. but! Ami can solve this issue, just with a few commands: customize your entire welcome, enable embed message, set the welcome message, set the role, disable/enable the welcome, all super easy & fast!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class='last-sect'>
+        <h1>Help us expand our business<br>We will be happy to server you</h1>
+        <p>Trusted by 340+ servers and 200k+ users</p>
+
+    </section>
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>&copy; Copyright 2021, Ami and Co <br>Designed by Ali™</p>
+    </section>
+
+    <!---##############################  Scripts ################################################## --->
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var mnu = document.getElementById("mnu")
+
+        sidenav.style.right = "-250px"
+
+        menubtn.onclick = function(){
+            if (sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                mnu.src = "./static/images/close.png";
+                menubtn.style.background = "#23272a"
+            }
+            else{
+                sidenav.style.right = "-250px";
+                mnu.src = "./static/images/menu.png";
+                menubtn.style.background = "#D26847"
+                
+            }   
+        }
+    </script>
+<script>
+    $(document).ready(function(){
+
+      $("a").on('click', function(event) {
+    
+
+        if (this.hash !== "") {
+
+          event.preventDefault();
+    
+
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+</body>
+</html>

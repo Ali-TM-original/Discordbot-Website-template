@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+}
+
+.banner{
+    width:100%;
+    height:110vh;
+    background-image: url("./static/images/image.gif");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner img{
+    box-shadow: 0 24px 16px 0 rgba(0,0,0,0.2), 0 24px 20px 0 rgba(0,0,0,0.19);
+}
+
+.logo{
+    width:120px;
+    margin-left: 120px;
+    margin-top:60px;
+    border-radius: 60px;
+}
+
+.abv{
+    width: 100%;
+    margin-top:5%;
+    text-align:center;
+    
+}
+
+.abv h1{
+    color:#ffff;
+    font-weight: 800px;
+}
+
+.content{
+
+    width: 100%;
+    position:absolute;
+    top:50%;
+    transform:translateY(-20px);
+    text-align:center;
+    color:#ffff
+}   
+
+.content h1{
+    font-size:70px;
+    margin-top: 90px;
+    font-weight:800px;
+}
+
+.content p{
+    margin:20px auto;
+    font-weight:600px;
+    line-height: 25px;
+    font-size:2em;
+}
+
+button{
+    width:200px;
+    padding:15px 0;
+    text-align:center;
+    margin:20px 10px;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: 15px;
+    border:2px solid #FA85D3;
+    background:transparent;
+    color:#fff;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition:.5s;
+}
+button:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2) inset, 0 16px 20px 0 rgba(0,0,0,0.19);
+}
+
+span {
+    margin-top: 50%;
+}
+
+@media (max-width:991px){
+
+    body{
+        overflow-y:scroll;
+        overflow-x: hidden;
+    }
+
+    .banner{
+        height:150vh;
+    }
+
+    .content{
+
+        width: 100%;
+        position:absolute;
+        top:50%;
+        transform:translateY(100px);
+        text-align:center;
+        color:#ffff
+    }   
+
+    .content h1{
+        font-size:1.5em;
+    }
+
+    .content p{
+        font-size:1em;
+    }
+
+    .abv{
+        width: 100%;
+        margin-top:10%;
+        text-align:center;
+        
+    }
+
+    .abv h1{
+        font-size:1.5em;
+    }
+}
